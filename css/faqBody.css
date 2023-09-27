@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600&family=Libre+Baskerville&family=Permanent+Marker&family=Roboto&display=swap');
+
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(1, 38, 14, 1) 96%);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+#faqHeading {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 3vw;
+}
+
+#faqBody {
+    width: 70vw;
+    font-family: 'Roboto', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#faqBoxes {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#faqDescription {
+    width: 40vw;
+    margin: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1vw;
+    padding: 1vw;
+    border-style: none;
+    border-radius: 15px;
+    background-color: #60BF89;
+    text-align: center;
+}
+
+#faqLinks {
+    width: 30%;
+    margin: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1vw;
+    border-style: none;
+    border-radius: 15px;
+    background-color: #60BF89;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.accordion {
+    background-color: #03A64A;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    padding: 1vw;
+    outline: none;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.4s, color 0.4s;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    color: white;
+    text-align: center;
+}
+
+.active {
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 0;
+}
+
+.accordion:after {
+    content: "\2B9E";
+    float: left;
+    margin-right: 0.25vw;
+    color: black;
+}
+
+.active:after {
+    content: "\2B9F";
+    float: left;
+    margin-right: 0.25vw;
+    color: black;
+}
+
+.active,
+.accordion:hover {
+    background-color: #05F26C;
+    color: black;
+}
+
+.panel {
+    background-color: #60BF89;
+    overflow: hidden;
+    padding: 0 1vw;
+    box-shadow: 0.05vw 0.1vw 0.2vw inset #01260E;
+    max-height: 0;
+    display: none;
+    transition: max-height 0.2s ease-in-out, border-radius 0.2s;
+    border-radius: 0 0 15px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+}
+
+.linkIcon {
+    width: 3vw;
+}

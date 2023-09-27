@@ -1,0 +1,86 @@
+.headerdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url("https://i.imgur.com/fsF147c.gif");
+}
+
+#title {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.logo {
+  padding: 1%;
+  width: 10%;
+}
+
+body {
+  margin: 0px;
+}
+
+#navbar {
+  background-image: url("https://i.imgur.com/3TB1Yul.png");
+  background-repeat: round;
+  background-size: contain;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: calc(12px + 1vw);
+  overflow: auto;
+  white-space: nowrap;
+  gap: 1vw;
+}
+
+.divider {
+  min-width: 8px;
+  width: 1.5vw;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navlink:link {
+  color: limegreen;
+  text-decoration: none;
+}
+
+.navlink:visited {
+  color: mediumseagreen;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  color: greenyellow;
+  text-decoration: underline;
+}
+
+.navlink:active {
+  color: lime;
+  text-decoration: underline;
+}
+
+.navlinkDark:link {
+  color: red;
+  text-decoration: none;
+}
+
+.navlinkDark:visited {
+  color: red;
+  text-decoration: none;
+}
+
+.navlinkDark:hover {
+  color: #CE0101;
+  text-decoration: underline;
+}
+
+.navlinkDark:active {
+  color: #FF0000;
+  text-decoration: underline;
+}
